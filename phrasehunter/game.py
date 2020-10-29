@@ -76,6 +76,7 @@ class Game():
 
             # Check to see if the player won
             if player_won:
+                self.active_phrase.display(self.guesses)
                 self.game_over("\nCongratulations you won!")
             else:
                 self.game_over("\nSorry you lost!")

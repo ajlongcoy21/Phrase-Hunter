@@ -28,9 +28,9 @@ class Phrase():
 
             # If the character is in the guessed_letters list or it is a space add the character to the display_string else add an "_"
             if (character in guessed_letters):
-                display_string += character
+                display_string += " " + character + " "
             elif character == " ":
-                display_string += "  "
+                display_string += "   "
             else:
                 display_string += " _ "    
 
